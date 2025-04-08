@@ -67,7 +67,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 echo "zsh-syntax-highlighting plugin has been installed!"
 
 # Update config
-sed -i -e 's|plugins=(git)|plugins=(git sudo docker zsh-autosuggestions zsh-syntax-highlighting)|' "$HOME"/.zshrc
+sed -i -e 's|plugins=(git)|plugins=(git extract sudo docker zsh-autosuggestions zsh-syntax-highlighting)|' "$HOME"/.zshrc
 echo "Configuration for these plugins has been added to your .zshrc file."
 
 echo "Please reopen shell"

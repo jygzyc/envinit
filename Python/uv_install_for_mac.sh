@@ -9,7 +9,7 @@ command -v curl > /dev/null || {
 
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-for config_file in  ~/.zprofile ~/.profile; do
+for config_file in  ~/.zprofile; do
     if [[ -f "$config_file" ]] && ! grep -q '# >>> python uv config start >>>' "$config_file"; then
             cat << 'EOF' >> "$config_file"
 # >>> python uv config start >>>
